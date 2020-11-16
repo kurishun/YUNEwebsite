@@ -1,0 +1,109 @@
+/*  typography */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Noto+Serif+JP:wght@200;500&display=swap');
+
+@font-face {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  src: url("../plugins/fonts/BwNistaInt-xBd.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+span.aks {
+  display: inline-block;
+}
+
+body {
+  line-height: 1.2;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: $text-color;
+}
+
+p, .paragraph {
+  font-weight: 200;
+  color: $text-color;
+  font-size: 15px;
+  line-height: 2.2;
+  font-family: $primary-font;
+  &-lg{
+    font-size: 22px;
+  }
+  &-sm{
+    font-size: 19px;
+  }
+}
+
+.taitoru1 {
+  font-weight: 800 !important;
+  color: #ee2d0b !important;
+  font-size: 150px !important;
+  font-family: $tertiary-font !important;
+  line-height: 1 !important;
+  text-shadow:
+    1px 0 0 white,
+    0 1px 0 white,
+    -1px 0 0 white,
+    0 -1px 0 white
+}
+.taitoru2 {
+  font-weight: 800 !important;
+  color: #ee2d0b !important;
+  font-size: 80px !important;
+  font-family: $tertiary-font !important;
+  line-height: 0.8 !important;
+  text-shadow:
+    1px 0 0 white,
+    0 1px 0 white,
+    -1px 0 0 white,
+    0 -1px 0 white
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  color: $text-color-dark;
+  font-family: $secondary-font;
+  line-height: 1.2;
+}
+
+h1, .h1{
+  font-size: 80px;
+  @include desktop {
+    font-size: 65px;
+  }
+}
+
+h2, .h2{
+  font-size: 60px;
+  @include desktop {
+    font-size: 50px;
+  }
+}
+
+h3, .h3{
+  font-size: 40px;
+}
+
+h4, .h4{
+  font-size: 22px;
+}
+
+h5, .h5{
+  font-size: 18px;
+}
+
+h6, .h6{
+  font-size: 14px;
+}
+
+
+.section-title-big {
+  margin-bottom: 10px;
+  font-family: $tertiary-font;
+}
+
+.section-title-sm {
+  margin-bottom: 5px;
+  font-family: $secondary-font;
+}

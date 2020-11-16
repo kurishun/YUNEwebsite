@@ -1,0 +1,70 @@
+.navigation{
+  padding: 40px 130px;
+  transition: .3s ease;
+  &.nav-bg {
+    background-color: $primary-color;
+    padding: 15px 100px;
+    @include desktop {
+      padding: 15px 20px;
+    }
+  }
+  @include desktop {
+    padding: 20px;
+    background: $primary-color;
+  }
+}
+
+.navbar{
+  .nav-item{
+    .nav-link{
+      font-family: $tertiary-font !important;
+      text-transform: uppercase;
+      padding: 15px;
+    }
+    &.active{
+      font-weight: bold;
+    }
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: $white;
+  font-size: 18px !important;
+  &-1{
+    font-family: $tertiary-font !important;
+    color: $white !important;
+    padding: 90px 10px !important;
+    font-size: 18px !important;
+  }
+
+}
+
+.nav-link-green{
+  font-family: $tertiary-font !important;
+  
+  &-1{
+    font-family: $tertiary-font !important;
+    color: $primary-color !important;
+    line-height: 2 !important;
+  }
+  &-2{
+    font-family: $tertiary-font !important;
+    color: $primary-color !important;
+    line-height: 2 !important;
+  }
+  &-3{
+    font-family: $tertiary-font !important;
+    color: $primary-color !important;
+    line-height: 2 !important;
+  }
+}
+
+/* ドロップダウンメニュー */
+.drop-hover:hover {
+   .dropdown-menu {
+  text: center
+  display: block !important;
+  padding: 20px;
+  width: 200px;
+  }
+}
